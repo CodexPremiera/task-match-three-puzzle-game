@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- CELL A -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_top_dock"
+                android:layout_height="@dimen/h_top_dock"
+                android:layout_marginHorizontal="@dimen/mx_top_dock"
+                android:layout_marginVertical="@dimen/my_top_dock"
+                android:background="@drawable/dock">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dock_shadow"
+                    android:contentDescription="@string/top_left_dock" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dock"
+                    android:layout_marginBottom="@dimen/elevation_top_dock"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_wide_top_dock"
+                android:layout_height="@dimen/h_top_dock"
+                android:layout_marginHorizontal="@dimen/mx_top_dock"
+                android:layout_marginVertical="@dimen/my_top_dock"
+                android:background="@drawable/dock">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dock_shadow"
+                    android:contentDescription="@string/top_center_dock" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dock"
+                    android:layout_marginBottom="@dimen/elevation_top_dock"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_top_dock"
+                android:layout_height="@dimen/h_top_dock"
+                android:layout_marginHorizontal="@dimen/mx_top_dock"
+                android:layout_marginVertical="@dimen/my_top_dock"
+                android:background="@drawable/dock">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dock_shadow"
+                    android:contentDescription="@string/top_right_dock" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dock"
+                    android:layout_marginBottom="@dimen/elevation_top_dock"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

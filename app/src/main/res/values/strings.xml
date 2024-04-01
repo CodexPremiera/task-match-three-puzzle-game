@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Match_Three_Game</string>
+    <string name="top_left_dock">top left dock</string>
+    <string name="top_right_dock">top right dock</string>
+    <string name="top_center_dock">top center dock</string>
+    <string name="lower_dock">lower dock</string>
 </resources>
