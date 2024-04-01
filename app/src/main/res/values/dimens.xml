@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h_cell">48dp</dimen>
+    <dimen name="v_cell">48dp</dimen>
+    <dimen name="mx_cell">12dp</dimen>
+    <dimen name="my_cell">11dp</dimen>
+
+</resources>

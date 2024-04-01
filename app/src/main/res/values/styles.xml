@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircularShape" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>
