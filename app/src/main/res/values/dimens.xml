@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="w_cell">40dp</dimen>
-    <dimen name="h_cell">40dp</dimen>
-    <dimen name="mx_cell">16dp</dimen>
-    <dimen name="my_cell">16dp</dimen>
+    <dimen name="w_cell">35dp</dimen>
+    <dimen name="h_cell">35dp</dimen>
+    <dimen name="mx_cell">14dp</dimen>
+    <dimen name="my_cell">14dp</dimen>
     <dimen name="cell_corner_radius">4dp</dimen>
 
-    <dimen name="w_wide_top_dock">222dp</dimen>
-    <dimen name="w_top_dock">60dp</dimen>
-    <dimen name="h_top_dock">66dp</dimen>
+    <dimen name="w_wide_top_dock">202dp</dimen>
+    <dimen name="w_top_dock">54dp</dimen>
+    <dimen name="h_top_dock">60dp</dimen>
     <dimen name="top_dock_corner_radius">18dp</dimen>
     <dimen name="mx_top_dock">5dp</dimen>
     <dimen name="my_top_dock">5dp</dimen>
     <dimen name="elevation_top_dock">6dp</dimen>
 
-    <dimen name="w_bottom_dock">362dp</dimen>
+    <dimen name="w_bottom_dock">330dp</dimen>
 </resources>
