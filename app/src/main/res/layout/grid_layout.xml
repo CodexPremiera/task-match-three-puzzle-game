@@ -6,287 +6,416 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:background="@drawable/cell_grid" >
 
         <!-- CELL A -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellA1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellA2"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_blue"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellA1"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellA3"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellA2"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellA4"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellA5"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellA3"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellA4"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellA5"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_yellow"/>
+            </RelativeLayout>
         </LinearLayout>
-
+        
         <!-- CELL B -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellB1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellB2"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellB1"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellB3"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellB4"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellB2"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellB5"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellB3"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellB4"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellB5"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_yellow"/>
+            </RelativeLayout>
         </LinearLayout>
 
         <!-- CELL C -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellC1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_blue"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellC2"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellC1"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellC3"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_blue"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellC4"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_blue"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellC2"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellC5"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellC3"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellC4"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellC5"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_yellow"/>
+            </RelativeLayout>
         </LinearLayout>
 
         <!-- CELL D -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellD1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellD2"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellD1"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellD3"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellD4"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellD2"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellD5"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_red"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellD3"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellD4"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellD5"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_yellow"/>
+            </RelativeLayout>
         </LinearLayout>
 
         <!-- CELL E -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellE1"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_green"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellE2"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellE1"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellE3"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellE4"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellE2"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_white"/>
+            </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="@dimen/w_cell"
-                android:layout_height="@dimen/h_cell"
-                android:id="@+id/cellE5"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:layout_marginHorizontal="@dimen/mx_cell"
-                android:layout_marginVertical="@dimen/my_cell"
-                android:backgroundTint="@color/button_yellow"
-                app:cornerRadius="@dimen/cell_corner_radius" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellE3"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellE4"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/cell_grid">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell"
+                    android:layout_height="@dimen/h_cell"
+                    android:id="@+id/cellE5"
+                    android:layout_marginHorizontal="@dimen/mx_cell"
+                    android:layout_marginVertical="@dimen/my_cell"
+                    android:background="@drawable/cell_button"
+                    android:backgroundTint="@color/button_yellow"/>
+            </RelativeLayout>
         </LinearLayout>
-
     </LinearLayout>
 </merge>
