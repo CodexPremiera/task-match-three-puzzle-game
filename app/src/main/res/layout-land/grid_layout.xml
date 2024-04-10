@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- CELL A -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellA1"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellA2"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellA3"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellA4"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellA5"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+        <!-- CELL B -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellB1"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellB2"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellB3"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellB4"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellB5"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- CELL C -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellC1"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellC2"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellC3"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellC4"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellC5"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- CELL D -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellD1"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellD2"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellD3"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellD4"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellD5"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- CELL E -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellE1"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellE2"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellE3"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellE4"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_cell_land"
+                    android:layout_height="@dimen/h_cell_land"
+                    android:id="@+id/cellE5"
+                    android:layout_marginHorizontal="@dimen/mx_cell_land"
+                    android:layout_marginVertical="@dimen/my_cell_land"
+                    android:clickable="false"
+                    android:background="@drawable/cell_button"
+                    android:radius="@dimen/cell_corner_radius"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

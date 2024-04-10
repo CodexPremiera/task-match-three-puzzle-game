@@ -10,7 +10,7 @@
 
         <RelativeLayout
             android:layout_width="@dimen/w_top_dock"
-            android:layout_height="@dimen/w_top_dock"
+            android:layout_height="@dimen/h_top_dock_land"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
             android:background="@drawable/dock">
@@ -60,8 +60,8 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="@dimen/w_wide_top_dock"
-            android:layout_height="@dimen/w_top_dock"
+            android:layout_width="@dimen/w_bottom_dock"
+            android:layout_height="@dimen/h_top_dock_land"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
             android:background="@drawable/dock">
@@ -79,20 +79,20 @@
                 android:layout_marginBottom="@dimen/elevation_top_dock">
 
                 <TextView
+                    android:id="@+id/statusTextBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/statusTextBar"
                     android:layout_centerInParent="true"
-                    android:textSize="@dimen/top_text_size"
+                    android:fontFamily="@font/montserrat_semi_bold"
                     android:textColor="@color/button_gray"
-                    android:fontFamily="@font/montserrat_semi_bold"/>
+                    android:textSize="@dimen/top_text_size" />
 
             </RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="@dimen/w_top_dock"
-            android:layout_height="@dimen/w_top_dock"
+            android:layout_height="@dimen/h_top_dock_land"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
             android:background="@drawable/dock">
@@ -104,11 +104,11 @@
                 android:contentDescription="@string/top_right_dock" />
 
             <RelativeLayout
+                android:id="@+id/btn_reset"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/dock"
-                android:id="@+id/btn_reset"
-                android:layout_marginBottom="@dimen/elevation_top_dock" >
+                android:layout_marginBottom="@dimen/elevation_top_dock"
+                android:background="@drawable/dock">
 
                 <ImageView
                     android:layout_width="32dp"

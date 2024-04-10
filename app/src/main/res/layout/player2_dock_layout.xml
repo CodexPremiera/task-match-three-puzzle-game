@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="@dimen/w_bottom_dock_half"
+        android:layout_height="@dimen/h_top_dock"
+        android:layout_marginHorizontal="@dimen/mx_top_dock"
+        android:layout_marginVertical="@dimen/my_top_dock"
+        android:background="@drawable/dock">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dock_shadow"
+            android:contentDescription="@string/lower_dock" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dock"
+            android:layout_marginBottom="@dimen/elevation_top_dock" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_legend"
+                android:layout_height="@dimen/h_legend"
+                android:id="@+id/player2Legend"
+                android:layout_marginHorizontal="@dimen/mx_legend"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/player2_button"
+                android:radius="@dimen/cell_corner_radius"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player2Name"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/player2Legend"
+                android:textSize="@dimen/legend_text_size"
+                android:textColor="@color/text_gray"
+                android:text="@string/player_2"
+                android:fontFamily="@font/montserrat_medium"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

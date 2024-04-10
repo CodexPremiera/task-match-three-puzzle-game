@@ -1,13 +1,6 @@
 package task.match_three_game.logic;
 
-import android.content.Context;
-import android.graphics.Color;
-
-import androidx.core.content.ContextCompat;
-
 import java.util.ArrayList;
-
-import task.match_three_game.R;
 
 public class Grid {
     /* FIELDS */
@@ -44,14 +37,17 @@ public class Grid {
             return true;
         if (checkVertical(originX, originY))
             return true;
-        return checkDiagonal(originX, originY);
+        if (checkDiagonalUp(originX, originY))
+            return true;
+        return false;
+        //return checkDiagonalDown(originX, originY);
     }
 
     private void setRange(int originX, int originY) {
         while (minX > 0 && minX > originX - 2) minX--;
         while (minY > 0 && minY > originY - 2) minY--;
-        while (maxX < this.numberOfColumns && maxX < originX + 3) maxX++;
-        while (maxY < this.numberOfColumns && maxY < originY + 3) maxY++;
+        while (maxX < this.numberOfColumns && maxX < originX + 2) maxX++;
+        while (maxY < this.numberOfColumns && maxY < originY + 2) maxY++;
     }
 
     private boolean checkHorizontal(int originX, int originY) {
@@ -82,7 +78,7 @@ public class Grid {
         return false;
     }
 
-    private boolean checkDiagonal(int originX, int originY) {
+    private boolean checkDiagonalUp(int originX, int originY) {
         Cell origin = columns.get(originX).get(originY);
         int connectCount = 0;
 
@@ -96,8 +92,26 @@ public class Grid {
         return false;
     }
 
+    /*private boolean checkDiagonalDown(int originX, int originY) {
+        Cell origin = columns.get(originX).get(originY);
+        int connectCount = 0;
+
+        for (int col = minX, row = maxY; col < maxX && row >= minY; col++, row--) {
+            Cell currentCell = columns.get(col).get(row);
+            connectCount = (currentCell.getColorist() == origin.getColorist()) ? connectCount + 1 : 0;
+
+            if (connectCount == 3) return true;
+        }
+
+        return false;
+    }*/
+
     public void addColumn(Column column) {
         columns.add(column);
         numberOfColumns++;
+    }
+
+    public ArrayList<Column> getColumns() {
+        return columns;
     }
 }

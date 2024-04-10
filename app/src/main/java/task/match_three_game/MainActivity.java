@@ -1,10 +1,15 @@
 package task.match_three_game;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.res.Configuration;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -22,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private Player player1;
     private Player player2;
     private Player currentPlayer;
-
+    private RelativeLayout resetButton;
     private TextView statusTextBar;
+    private TextView movesCounter;
+    private int moveCount;
+
 
     /* INITIALIZERS */
     private void initializePlayers() {
@@ -42,9 +50,19 @@ public class MainActivity extends AppCompatActivity {
         cellButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (moveCount <= 0)
+                    return;
+
                 // check the connect at current cell, catch error if column is full
                 try {
                     boolean hasConnected = grid.checkConnect3(column, currentPlayer);
+                    decrementMoves();
+
+                    // check if tie
+                    if (moveCount <= 0) {
+                        announceTie();
+                        return;
+                    }
 
                     // check if current player has won
                     if (hasConnected) {
@@ -64,6 +82,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void initializeReset() {
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                grid.getColumns().forEach(Column::reset);
+                moveCount = grid.getColumns().size() * grid.getColumns().get(0).getSize();
+                movesCounter.setText(String.valueOf(moveCount));
+                topCells.forEach(cell -> cell.setEnabled(true));
+
+                currentPlayer = player1;
+                announceTurn(player1);
+            }
+        });
+    }
 
     private void initializeGrid() {
         this.grid = new Grid();
@@ -135,20 +167,22 @@ public class MainActivity extends AppCompatActivity {
         grid.addColumn(columnE);
     }
 
+    private void initializeWindow() {
+        int white = ContextCompat.getColor(this, R.color.background_white);
+        int black = ContextCompat.getColor(this, R.color.black);
+        getWindow().setNavigationBarColor(white);
+        getWindow().setStatusBarColor(black);
 
-    /* ON CREATE */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        this.statusTextBar = findViewById(R.id.statusTextBar);
-        this.initializePlayers();
-        this.initializeGrid();
-
-        announceTurn(currentPlayer);
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                        View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        );
     }
 
+    /* HELPER METHODS */
     private void announceTurn(Player player) {
         String turnAnnouncement = player.getName() + " turn";
         statusTextBar.setText(turnAnnouncement);
@@ -160,4 +194,43 @@ public class MainActivity extends AppCompatActivity {
         statusTextBar.setText(winAnnouncement);
         statusTextBar.setTextColor(player.getColor());
     }
+
+    private void announceTie() {
+        String winAnnouncement = "It's a tie.";
+        statusTextBar.setText(winAnnouncement);
+        int textColor = ContextCompat.getColor(this, R.color.text_gray);
+        statusTextBar.setTextColor(textColor);
+    }
+
+    private void decrementMoves() {
+        this.movesCounter.setText(String.valueOf(--moveCount));
+    }
+
+
+    /* ON CREATE */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // setup the navigation bar and status bar
+        this.initializeWindow();
+
+        // get elements
+        this.statusTextBar = findViewById(R.id.statusTextBar);
+        this.resetButton = findViewById(R.id.btn_reset);
+        this.movesCounter = findViewById(R.id.move_counter);
+
+        // setup game space
+        this.initializePlayers();
+        this.initializeGrid();
+        this.initializeReset();
+
+        // setup values
+        this.moveCount = grid.getColumns().size() * grid.getColumns().get(0).getSize();
+        this.movesCounter.setText(String.valueOf(moveCount));
+        announceTurn(currentPlayer);
+    }
+
+    /* METHODS */
 }

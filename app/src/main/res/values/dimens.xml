@@ -6,21 +6,29 @@
     <dimen name="my_cell">10dp</dimen>
     <dimen name="cell_corner_radius">6dp</dimen>
 
+    <dimen name="w_cell_land">48dp</dimen>
+    <dimen name="h_cell_land">36dp</dimen>
+    <dimen name="mx_cell_land">10dp</dimen>
+    <dimen name="my_cell_land">8dp</dimen>
+
     <dimen name="w_legend">28dp</dimen>
     <dimen name="h_legend">28dp</dimen>
-    <dimen name="mx_legend">21dp</dimen>
+    <dimen name="mx_legend">16dp</dimen>
     <dimen name="my_legend">12dp</dimen>
     <dimen name="legend_corner_radius">8dp</dimen>
 
     <dimen name="w_wide_top_dock">202dp</dimen>
     <dimen name="w_top_dock">54dp</dimen>
     <dimen name="h_top_dock">60dp</dimen>
+    <dimen name="h_top_dock_land">50dp</dimen>
     <dimen name="top_dock_corner_radius">18dp</dimen>
     <dimen name="mx_top_dock">5dp</dimen>
     <dimen name="my_top_dock">5dp</dimen>
     <dimen name="elevation_top_dock">4dp</dimen>
 
     <dimen name="w_bottom_dock">330dp</dimen>
+    <dimen name="w_bottom_dock_land">330dp</dimen>
+    <dimen name="w_bottom_dock_half">156dp</dimen>
     <dimen name="top_text_size">20sp</dimen>
     <dimen name="legend_text_size">16sp</dimen>
 

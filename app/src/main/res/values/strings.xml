@@ -6,4 +6,7 @@
     <string name="lower_dock">lower dock</string>
     <string name="player_1">PLAYER 1</string>
     <string name="player_2">PLAYER 2</string>
+    <string name="reset">reset</string>
+    <string name="moves">MOVES</string>
+    <string name="default_moves">0</string>
 </resources>

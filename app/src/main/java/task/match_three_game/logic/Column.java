@@ -35,6 +35,7 @@ public class Column {
 
     public void reset() {
         cells.forEach(Cell::resetCell);
+        this.uncoloredIndex = 0;
     }
 
     public void addCell(Cell cell) {
@@ -48,5 +49,9 @@ public class Column {
 
     public int getSize() {
         return cells.size();
+    }
+
+    public ArrayList<Cell> getCells() {
+        return cells;
     }
 }
