@@ -3,10 +3,13 @@ package task.match_three_game;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 import task.match_three_game.logic.Cell;
 import task.match_three_game.logic.Column;
@@ -15,17 +18,20 @@ import task.match_three_game.logic.Player;
 
 public class MainActivity extends AppCompatActivity {
     private Grid grid;
+    private ArrayList<RelativeLayout> topCells;
     private Player player1;
     private Player player2;
     private Player currentPlayer;
 
+    private TextView statusTextBar;
+
     /* INITIALIZERS */
     private void initializePlayers() {
-        int yellow = ContextCompat.getColor(this, R.color.button_yellow);
-        int blue = ContextCompat.getColor(this, R.color.button_blue);
+        Drawable player1Button = ContextCompat.getDrawable(this, R.drawable.player1_button);
+        Drawable player2Button = ContextCompat.getDrawable(this, R.drawable.player2_button);
 
-        player1 = new Player("Player 1", blue);
-        player2 = new Player("Player 2", yellow);
+        player1 = new Player("Player 1", player1Button);
+        player2 = new Player("Player 2", player2Button);
         currentPlayer = player1;
     }
 
@@ -35,8 +41,21 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // check the connect at current cell, catch error if column is full
                 try {
-                    grid.checkConnect3(column, currentPlayer);
+                    boolean hasConnected = grid.checkConnect3(column, currentPlayer);
+
+                    if (hasConnected) {
+                        // make top cells not clickable
+                        topCells.forEach(cell -> cell.setEnabled(false));
+
+                        String winnerAnnouncement = currentPlayer.getName() + " wins!";
+                        statusTextBar.setText(winnerAnnouncement);
+                        return;
+                    }
+
+                    // change turn
                     currentPlayer = (currentPlayer == player1) ? player2 : player1;
+                    String turnAnnouncement = currentPlayer.getName() + " turn";
+                    statusTextBar.setText(turnAnnouncement);
                 } catch (RuntimeException columnIsFullException) {
                     columnIsFullException.printStackTrace();
                 }
@@ -47,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeGrid() {
         this.grid = new Grid();
+        this.topCells = new ArrayList<>();
 
         // Column A
         Column columnA = new Column();
@@ -58,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         columnA.addCell(new Cell(findViewById(R.id.cellA3)));
         columnA.addCell(new Cell(findViewById(R.id.cellA2)));
         columnA.addCell(new Cell(topOfA));
+        topCells.add(topOfA);
         grid.addColumn(columnA);
 
         // Column B
@@ -70,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         columnB.addCell(new Cell(findViewById(R.id.cellB3)));
         columnB.addCell(new Cell(findViewById(R.id.cellB2)));
         columnB.addCell(new Cell(topOfB));
+        topCells.add(topOfB);
         grid.addColumn(columnB);
 
         // Column C
@@ -82,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         columnC.addCell(new Cell(findViewById(R.id.cellC3)));
         columnC.addCell(new Cell(findViewById(R.id.cellC2)));
         columnC.addCell(new Cell(topOfC));
+        topCells.add(topOfC);
         grid.addColumn(columnC);
 
         // Column D
@@ -94,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         columnD.addCell(new Cell(findViewById(R.id.cellD3)));
         columnD.addCell(new Cell(findViewById(R.id.cellD2)));
         columnD.addCell(new Cell(topOfD));
+        topCells.add(topOfD);
         grid.addColumn(columnD);
 
         // Column E
@@ -106,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         columnE.addCell(new Cell(findViewById(R.id.cellE3)));
         columnE.addCell(new Cell(findViewById(R.id.cellE2)));
         columnE.addCell(new Cell(topOfE));
+        topCells.add(topOfE);
         grid.addColumn(columnE);
     }
 
@@ -118,5 +143,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.initializePlayers();
         this.initializeGrid();
+
+        this.statusTextBar = findViewById(R.id.statusTextBar);
+        String turnAnnouncement = currentPlayer.getName() + " turn";
+        statusTextBar.setText(turnAnnouncement);
     }
 }

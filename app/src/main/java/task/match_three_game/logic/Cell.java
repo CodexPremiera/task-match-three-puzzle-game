@@ -1,22 +1,20 @@
 package task.match_three_game.logic;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.widget.RelativeLayout;
-
-import java.util.Objects;
 
 
 public class Cell {
     /* FIELDS */
     private final RelativeLayout button;
-    private final int BUTTON_BASE_COLOR;
+    private final Drawable BUTTON_BASE_COLOR;
     private Player colorist;
 
     /* CONSTRUCTOR */
     public Cell(RelativeLayout button) {
         this.button = button;
-        this.BUTTON_BASE_COLOR = android.R.color.white;
+        this.BUTTON_BASE_COLOR = button.getBackground();
         this.colorist = null;
     }
 
@@ -31,16 +29,16 @@ public class Cell {
 
     /* METHODS */
     public void colorizeBy(Player colorist) {
-        button.setBackgroundColor(colorist.getColor());
+        button.setBackground(colorist.getDrawable());
         this.setColorist(colorist);
     }
 
-    public void setColor(int color) {
-        button.setBackgroundColor(color);
+    public void setColor(Drawable newColor) {
+        button.setBackground(newColor);
     }
 
     public void resetCell() {
-        button.setBackgroundColor(BUTTON_BASE_COLOR);
+        button.setBackground(BUTTON_BASE_COLOR);
         this.colorist = null;
     }
 }

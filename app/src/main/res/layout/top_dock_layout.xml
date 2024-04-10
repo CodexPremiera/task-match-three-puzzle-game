@@ -45,7 +45,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/dock"
-                android:layout_marginBottom="@dimen/elevation_top_dock"/>
+                android:layout_marginBottom="@dimen/elevation_top_dock">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusTextBar"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/text_gray"
+                    android:fontFamily="@font/montserrat_medium"/>
+
+
+            </RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout

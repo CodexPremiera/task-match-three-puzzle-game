@@ -5,8 +5,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cell_grid" >
+        android:layout_height="wrap_content" >
 
         <!-- CELL A -->
         <LinearLayout
@@ -16,8 +15,7 @@
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -25,14 +23,13 @@
                     android:id="@+id/cellA1"
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
             
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -41,14 +38,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -57,14 +53,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -73,14 +68,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -89,7 +83,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -102,8 +96,7 @@
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -112,14 +105,13 @@
                     android:clickable="true"
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -128,14 +120,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -144,14 +135,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -160,14 +150,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -176,7 +165,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -189,8 +178,7 @@
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -198,14 +186,13 @@
                     android:id="@+id/cellC1"
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -214,14 +201,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -230,14 +216,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -246,14 +231,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -262,7 +246,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -275,8 +259,7 @@
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -284,14 +267,13 @@
                     android:id="@+id/cellD1"
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -300,14 +282,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -316,14 +297,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -332,14 +312,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -348,7 +327,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -361,8 +340,7 @@
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -370,14 +348,13 @@
                     android:id="@+id/cellE1"
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -386,14 +363,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -402,14 +378,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -418,14 +393,13 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/cell_grid">
+                android:layout_width="wrap_content">
 
                 <RelativeLayout
                     android:layout_width="@dimen/w_cell"
@@ -434,7 +408,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell"
                     android:layout_marginVertical="@dimen/my_cell"
                     android:clickable="false"
-                    android:background="@color/button_gray"
+                    android:background="@drawable/cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>

@@ -6,11 +6,12 @@
     <color name="background_white">#FFFEFEFE</color>
     <color name="dock_gray">#FFF3F3F3</color>
     <color name="dock_shadow">#FFC6C6C6</color>
+    <color name="text_gray">#FF808487</color>
 
     <color name="cell_border">#DCDCDC</color>
 
     <color name="button_white">#FFFFFFFF</color>
-    <color name="button_gray">#FFF3F3F3</color>
+    <color name="button_gray">#FF808080</color>
     <color name="button_red">#FFE94E60</color>
     <color name="button_pink">#A59D52</color>
     <color name="button_yellow">#FFFCCE6C</color>
