@@ -35,6 +35,10 @@ public class Cell {
         this.setColorist(colorist);
     }
 
+    public void setColor(int color) {
+        button.setBackgroundColor(color);
+    }
+
     public void resetCell() {
         button.setBackgroundColor(BUTTON_BASE_COLOR);
         this.colorist = null;

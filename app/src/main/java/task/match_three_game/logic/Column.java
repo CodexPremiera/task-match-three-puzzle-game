@@ -14,20 +14,23 @@ public class Column {
     /* CONSTRUCTOR */
     public Column() {
         this.cells = new ArrayList<>();
-        this.uncoloredIndex = -1;
+        this.uncoloredIndex = 0;
         this.numberOfCells = 0;
     }
 
     /* METHODS */
-    public void addColoredCell(Player player) {
+    public int addColoredCell(Player player) {
         // skip if all cells are colored
-        if(uncoloredIndex < 0)
-            return;
+        if(uncoloredIndex >= numberOfCells)
+            return numberOfCells;
 
         // color the cell
         Cell lastUncoloredCell = cells.get(uncoloredIndex);
         player.colorCell(lastUncoloredCell);
-        uncoloredIndex--;
+        uncoloredIndex++;
+
+        // return index last colored
+        return uncoloredIndex - 1;
     }
 
     public void reset() {
@@ -37,6 +40,13 @@ public class Column {
     public void addCell(Cell cell) {
         cells.add(cell);
         numberOfCells++;
-        uncoloredIndex++;
+    }
+
+    public Cell get(int yIndex) {
+        return cells.get(yIndex);
+    }
+
+    public int getSize() {
+        return cells.size();
     }
 }
