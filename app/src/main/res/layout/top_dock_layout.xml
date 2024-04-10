@@ -52,10 +52,9 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/statusTextBar"
                     android:layout_centerInParent="true"
-                    android:textSize="@dimen/text_size"
-                    android:textColor="@color/text_gray"
-                    android:fontFamily="@font/montserrat_medium"/>
-
+                    android:textSize="@dimen/top_text_size"
+                    android:textColor="@color/button_gray"
+                    android:fontFamily="@font/montserrat_semi_bold"/>
 
             </RelativeLayout>
         </RelativeLayout>

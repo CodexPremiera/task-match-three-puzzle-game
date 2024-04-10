@@ -27,11 +27,14 @@ public class MainActivity extends AppCompatActivity {
 
     /* INITIALIZERS */
     private void initializePlayers() {
+        int player1Color = ContextCompat.getColor(this, R.color.button_blue);
+        int player2Color = ContextCompat.getColor(this, R.color.button_orange);
+
         Drawable player1Button = ContextCompat.getDrawable(this, R.drawable.player1_button);
         Drawable player2Button = ContextCompat.getDrawable(this, R.drawable.player2_button);
 
-        player1 = new Player("Player 1", player1Button);
-        player2 = new Player("Player 2", player2Button);
+        player1 = new Player("Player 1", player1Button, player1Color);
+        player2 = new Player("Player 2", player2Button, player2Color);
         currentPlayer = player1;
     }
 
@@ -43,19 +46,17 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     boolean hasConnected = grid.checkConnect3(column, currentPlayer);
 
+                    // check if current player has won
                     if (hasConnected) {
-                        // make top cells not clickable
+                        // make top cells not clickable and announce win
                         topCells.forEach(cell -> cell.setEnabled(false));
-
-                        String winnerAnnouncement = currentPlayer.getName() + " wins!";
-                        statusTextBar.setText(winnerAnnouncement);
+                        announceWin(currentPlayer);
                         return;
                     }
 
-                    // change turn
+                    // change turns
                     currentPlayer = (currentPlayer == player1) ? player2 : player1;
-                    String turnAnnouncement = currentPlayer.getName() + " turn";
-                    statusTextBar.setText(turnAnnouncement);
+                    announceTurn(currentPlayer);
                 } catch (RuntimeException columnIsFullException) {
                     columnIsFullException.printStackTrace();
                 }
@@ -141,11 +142,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        this.statusTextBar = findViewById(R.id.statusTextBar);
         this.initializePlayers();
         this.initializeGrid();
 
-        this.statusTextBar = findViewById(R.id.statusTextBar);
-        String turnAnnouncement = currentPlayer.getName() + " turn";
+        announceTurn(currentPlayer);
+    }
+
+    private void announceTurn(Player player) {
+        String turnAnnouncement = player.getName() + " turn";
         statusTextBar.setText(turnAnnouncement);
+        statusTextBar.setTextColor(player.getColor());
+    }
+
+    private void announceWin(Player player) {
+        String winAnnouncement = player.getName() + " wins!";
+        statusTextBar.setText(winAnnouncement);
+        statusTextBar.setTextColor(player.getColor());
     }
 }

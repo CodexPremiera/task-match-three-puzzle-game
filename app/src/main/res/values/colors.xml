@@ -13,8 +13,9 @@
     <color name="button_white">#FFFFFFFF</color>
     <color name="button_gray">#FF808080</color>
     <color name="button_red">#FFE94E60</color>
-    <color name="button_pink">#A59D52</color>
+    <color name="button_orange">#F29A4E</color>
+    <color name="button_pink">#FFA5527C</color>
     <color name="button_yellow">#FFFCCE6C</color>
     <color name="button_green">#FF5FA882</color>
-    <color name="button_blue">#FF6E8CC0</color>
+    <color name="button_blue">#718BBC</color>
 </resources>

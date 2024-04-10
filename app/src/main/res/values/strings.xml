@@ -4,4 +4,6 @@
     <string name="top_right_dock">top right dock</string>
     <string name="top_center_dock">top center dock</string>
     <string name="lower_dock">lower dock</string>
+    <string name="player_1">PLAYER 1</string>
+    <string name="player_2">PLAYER 2</string>
 </resources>

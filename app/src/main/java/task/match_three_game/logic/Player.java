@@ -6,11 +6,13 @@ public class Player {
     /* FIELDS */
     private final String name;
     private final Drawable drawable;
+    private final int color;
 
     /* CONSTRUCTOR */
-    public Player(String name, Drawable assignedDrawable) {
+    public Player(String name, Drawable assignedDrawable, int color) {
         this.name = name;
         this.drawable = assignedDrawable;
+        this.color = color;
     }
 
     /* GETTERS */
@@ -20,6 +22,10 @@ public class Player {
 
     public Drawable getDrawable() {
         return drawable;
+    }
+
+    public int getColor() {
+        return color;
     }
 
     /* METHOD */
